@@ -26,16 +26,5 @@ describe("Visitor",()=>{
     })
     it("should have the name of the assistant",()=>{
         expect(bob.name).toBe("Rixongile")
-    })
-    it("should be able to save files", function() {
-        expect(bob.save()).toBeDefined();
     });
-    it("should be able to load visitors data", function() {
-        expect(bob.load("Bob Marley")).toBeDefined();
-    })
-    it("should throw an error for a wrong name", () => {
-        expect(() => {
-          bob.load("xongi");
-        }).toThrow(new Error(err));
-      });
 })
