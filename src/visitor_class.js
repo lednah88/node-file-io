@@ -19,6 +19,7 @@ class Visitor {
       }
     );
   }
+
   load(fullName) {
     this.fullName = fullName;
     let fullNames = this.fullName.toLowerCase().replace(" ", "_");
@@ -38,24 +39,5 @@ let alice = new Visitor(
   "Sizwe"
 );
 alice.save();
-let bob = new Visitor(
-  "Bob Marley",
-  23,
-  "16:15",
-  "11-08-2020",
-  "very informative",
-  "Rixongile"
-);
-bob.save();
-let charlie = new Visitor(
-  "Charley Sheen",
-  30,
-  "20:30",
-  "11-08-2020",
-  "Winning!",
-  "Tumi"
-);
-charlie.save();
 alice.load("Alice Cooper");
-bob.load("Bob Marley")
 module.exports = {Visitor}
