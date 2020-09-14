@@ -8,7 +8,6 @@ let bob = new Visitor(
     "Rixongile"
   );
 describe("Visitor",()=>{
-    const fs = require("fs")
     it("should have a full name",()=>{
         expect(bob.fullName).toBe("Bob Marley")
     })
